@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F85F882EF3C8113A6743809 /* Pods_Qreader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D262F6831D1E397CF9CA6BB /* Pods_Qreader.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FF6DA65A1B2ABDF9009BEE57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA6591B2ABDF9009BEE57 /* AppDelegate.swift */; };
+		FF6DA65C1B2ABDF9009BEE57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA65B1B2ABDF9009BEE57 /* ViewController.swift */; };
+		FF6DA65F1B2ABDF9009BEE57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6DA65D1B2ABDF9009BEE57 /* Main.storyboard */; };
+		FF6DA6611B2ABDF9009BEE57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6DA6601B2ABDF9009BEE57 /* Images.xcassets */; };
+		FF6DA6641B2ABDF9009BEE57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6DA6621B2ABDF9009BEE57 /* LaunchScreen.xib */; };
+		FF6DA6701B2ABDF9009BEE57 /* QreaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA66F1B2ABDF9009BEE57 /* QreaderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF6DA66A1B2ABDF9009BEE57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6DA64C1B2ABDF9009BEE57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF6DA6531B2ABDF9009BEE57;
+			remoteInfo = Qreader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		553899872321B36E63893339 /* Pods-Qreader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qreader.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qreader/Pods-Qreader.release.xcconfig"; sourceTree = "<group>"; };
+		6D262F6831D1E397CF9CA6BB /* Pods_Qreader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qreader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95F3E98CB219EC21AC1167C /* Pods-Qreader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qreader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qreader/Pods-Qreader.debug.xcconfig"; sourceTree = "<group>"; };
+		FF6DA6541B2ABDF9009BEE57 /* Qreader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qreader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6DA6581B2ABDF9009BEE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6DA6591B2ABDF9009BEE57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF6DA65B1B2ABDF9009BEE57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF6DA65E1B2ABDF9009BEE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF6DA6601B2ABDF9009BEE57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF6DA6631B2ABDF9009BEE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FF6DA6691B2ABDF9009BEE57 /* QreaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QreaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6DA66E1B2ABDF9009BEE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6DA66F1B2ABDF9009BEE57 /* QreaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QreaderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF6DA6511B2ABDF9009BEE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F85F882EF3C8113A6743809 /* Pods_Qreader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6DA6661B2ABDF9009BEE57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CFD07A41C3AD7AE54F5B835 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D262F6831D1E397CF9CA6BB /* Pods_Qreader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF6DA64B1B2ABDF9009BEE57 = {
+			isa = PBXGroup;
+			children = (
+				FF6DA6561B2ABDF9009BEE57 /* Qreader */,
+				FF6DA66C1B2ABDF9009BEE57 /* QreaderTests */,
+				FF6DA6551B2ABDF9009BEE57 /* Products */,
+				FFCECD719B38E1838AA6803D /* Pods */,
+				2CFD07A41C3AD7AE54F5B835 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF6DA6551B2ABDF9009BEE57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA6541B2ABDF9009BEE57 /* Qreader.app */,
+				FF6DA6691B2ABDF9009BEE57 /* QreaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF6DA6561B2ABDF9009BEE57 /* Qreader */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA67D1B2ABF68009BEE57 /* UI */,
+				FF6DA67C1B2ABF5F009BEE57 /* Application */,
+				FF6DA67B1B2ABF57009BEE57 /* Domain */,
+				FF6DA67A1B2ABF4D009BEE57 /* Infrastructure */,
+				FF6DA6571B2ABDF9009BEE57 /* Supporting Files */,
+			);
+			path = Qreader;
+			sourceTree = "<group>";
+		};
+		FF6DA6571B2ABDF9009BEE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA6581B2ABDF9009BEE57 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF6DA66C1B2ABDF9009BEE57 /* QreaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA66F1B2ABDF9009BEE57 /* QreaderTests.swift */,
+				FF6DA66D1B2ABDF9009BEE57 /* Supporting Files */,
+			);
+			path = QreaderTests;
+			sourceTree = "<group>";
+		};
+		FF6DA66D1B2ABDF9009BEE57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA66E1B2ABDF9009BEE57 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF6DA67A1B2ABF4D009BEE57 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		FF6DA67B1B2ABF57009BEE57 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		FF6DA67C1B2ABF5F009BEE57 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA6591B2ABDF9009BEE57 /* AppDelegate.swift */,
+				FF6DA65B1B2ABDF9009BEE57 /* ViewController.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		FF6DA67D1B2ABF68009BEE57 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA65D1B2ABDF9009BEE57 /* Main.storyboard */,
+				FF6DA6601B2ABDF9009BEE57 /* Images.xcassets */,
+				FF6DA6621B2ABDF9009BEE57 /* LaunchScreen.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FFCECD719B38E1838AA6803D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E95F3E98CB219EC21AC1167C /* Pods-Qreader.debug.xcconfig */,
+				553899872321B36E63893339 /* Pods-Qreader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF6DA6531B2ABDF9009BEE57 /* Qreader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF6DA6731B2ABDF9009BEE57 /* Build configuration list for PBXNativeTarget "Qreader" */;
+			buildPhases = (
+				6DE33DBE222447C352618214 /* Check Pods Manifest.lock */,
+				FF6DA6501B2ABDF9009BEE57 /* Sources */,
+				FF6DA6511B2ABDF9009BEE57 /* Frameworks */,
+				FF6DA6521B2ABDF9009BEE57 /* Resources */,
+				38B6467754910F01B2563FD2 /* Embed Pods Frameworks */,
+				FECF2BD8C12002ECF3E9C48B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qreader;
+			productName = Qreader;
+			productReference = FF6DA6541B2ABDF9009BEE57 /* Qreader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF6DA6681B2ABDF9009BEE57 /* QreaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF6DA6761B2ABDF9009BEE57 /* Build configuration list for PBXNativeTarget "QreaderTests" */;
+			buildPhases = (
+				FF6DA6651B2ABDF9009BEE57 /* Sources */,
+				FF6DA6661B2ABDF9009BEE57 /* Frameworks */,
+				FF6DA6671B2ABDF9009BEE57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF6DA66B1B2ABDF9009BEE57 /* PBXTargetDependency */,
+			);
+			name = QreaderTests;
+			productName = QreaderTests;
+			productReference = FF6DA6691B2ABDF9009BEE57 /* QreaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF6DA64C1B2ABDF9009BEE57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = gomi;
+				TargetAttributes = {
+					FF6DA6531B2ABDF9009BEE57 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					FF6DA6681B2ABDF9009BEE57 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = FF6DA6531B2ABDF9009BEE57;
+					};
+				};
+			};
+			buildConfigurationList = FF6DA64F1B2ABDF9009BEE57 /* Build configuration list for PBXProject "Qreader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF6DA64B1B2ABDF9009BEE57;
+			productRefGroup = FF6DA6551B2ABDF9009BEE57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF6DA6531B2ABDF9009BEE57 /* Qreader */,
+				FF6DA6681B2ABDF9009BEE57 /* QreaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF6DA6521B2ABDF9009BEE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6DA65F1B2ABDF9009BEE57 /* Main.storyboard in Resources */,
+				FF6DA6641B2ABDF9009BEE57 /* LaunchScreen.xib in Resources */,
+				FF6DA6611B2ABDF9009BEE57 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6DA6671B2ABDF9009BEE57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38B6467754910F01B2563FD2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Qreader/Pods-Qreader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DE33DBE222447C352618214 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FECF2BD8C12002ECF3E9C48B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Qreader/Pods-Qreader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF6DA6501B2ABDF9009BEE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6DA65C1B2ABDF9009BEE57 /* ViewController.swift in Sources */,
+				FF6DA65A1B2ABDF9009BEE57 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6DA6651B2ABDF9009BEE57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6DA6701B2ABDF9009BEE57 /* QreaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF6DA66B1B2ABDF9009BEE57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF6DA6531B2ABDF9009BEE57 /* Qreader */;
+			targetProxy = FF6DA66A1B2ABDF9009BEE57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF6DA65D1B2ABDF9009BEE57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF6DA65E1B2ABDF9009BEE57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF6DA6621B2ABDF9009BEE57 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF6DA6631B2ABDF9009BEE57 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF6DA6711B2ABDF9009BEE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF6DA6721B2ABDF9009BEE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF6DA6741B2ABDF9009BEE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E95F3E98CB219EC21AC1167C /* Pods-Qreader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Qreader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF6DA6751B2ABDF9009BEE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553899872321B36E63893339 /* Pods-Qreader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Qreader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FF6DA6771B2ABDF9009BEE57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QreaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qreader.app/Qreader";
+			};
+			name = Debug;
+		};
+		FF6DA6781B2ABDF9009BEE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QreaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qreader.app/Qreader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF6DA64F1B2ABDF9009BEE57 /* Build configuration list for PBXProject "Qreader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6DA6711B2ABDF9009BEE57 /* Debug */,
+				FF6DA6721B2ABDF9009BEE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF6DA6731B2ABDF9009BEE57 /* Build configuration list for PBXNativeTarget "Qreader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6DA6741B2ABDF9009BEE57 /* Debug */,
+				FF6DA6751B2ABDF9009BEE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF6DA6761B2ABDF9009BEE57 /* Build configuration list for PBXNativeTarget "QreaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6DA6771B2ABDF9009BEE57 /* Debug */,
+				FF6DA6781B2ABDF9009BEE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF6DA64C1B2ABDF9009BEE57 /* Project object */;
+}
