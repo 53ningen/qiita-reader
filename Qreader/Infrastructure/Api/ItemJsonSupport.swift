@@ -8,7 +8,7 @@
 import SwiftyJSON
 import Foundation
 
-public struct ItemsJsonSupport {
+public struct ItemJsonSupport {
     
     static let RENDERED_BODY: String = "rendered_body"
     static let BODY: String = "body"
@@ -25,7 +25,7 @@ public struct ItemsJsonSupport {
     public static func json2Items(json: JSON) -> [Item]? {
         if let jsonArray = json.array {
             return jsonArray
-                .map { ItemsJsonSupport.json2Item($0) }
+                .map { ItemJsonSupport.json2Item($0) }
                 .filter { $0 != nil }
                 .map { $0! }
           }

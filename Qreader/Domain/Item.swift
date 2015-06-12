@@ -9,17 +9,17 @@ import Foundation
 
 public class Item {
     
-    let id: String
-    let title: String
-    let user: User
-    let url: String
-    let renderedBody: String?
-    let body: String?
-    let coediting: Bool?
-    let createdAt: String?
-    let isPrivate: Bool?
-    let tags: [String]?
-    let updatedAt: String?
+    public let id: String
+    public let title: String
+    public let user: User
+    public let url: String
+    public let renderedBody: String?
+    public let body: String?
+    public let coediting: Bool?
+    public let createdAt: String?
+    public let isPrivate: Bool?
+    public let tags: [String]?
+    public let updatedAt: String?
     
     public init(id: String, title: String, user: User, url: String,
         renderedBody: String?, body: String?, coediting: Bool?,

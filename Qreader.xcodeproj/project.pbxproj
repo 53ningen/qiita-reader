@@ -652,6 +652,8 @@ fi
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
+				<string>FF6DA6A81B2B0F6F009BEE57</string>
+				<string>FF6DA6AA1B2B1048009BEE57</string>
 				<string>FF6DA6991B2AE321009BEE57</string>
 				<string>FF6DA6701B2ABDF9009BEE57</string>
 			</array>
@@ -679,8 +681,10 @@ fi
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
+				<string>FF6DA6A61B2B0E9B009BEE57</string>
 				<string>FF6DA69D1B2AE726009BEE57</string>
 				<string>FF6DA6A21B2B01C0009BEE57</string>
+				<string>FF6DA6A41B2B0E93009BEE57</string>
 			</array>
 			<key>isa</key>
 			<string>PBXResourcesBuildPhase</string>
@@ -1177,7 +1181,7 @@ fi
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
 			<key>path</key>
-			<string>ItemsJsonSupport.swift</string>
+			<string>ItemJsonSupport.swift</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1306,6 +1310,8 @@ fi
 			<key>children</key>
 			<array>
 				<string>FF6DA6981B2AE321009BEE57</string>
+				<string>FF6DA6A71B2B0F6F009BEE57</string>
+				<string>FF6DA6A91B2B1048009BEE57</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1353,6 +1359,8 @@ fi
 			<array>
 				<string>FF6DA69C1B2AE726009BEE57</string>
 				<string>FF6DA6A11B2B01C0009BEE57</string>
+				<string>FF6DA6A31B2B0E93009BEE57</string>
+				<string>FF6DA6A51B2B0E9B009BEE57</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1398,6 +1406,86 @@ fi
 		<dict>
 			<key>fileRef</key>
 			<string>FF6DA6A11B2B01C0009BEE57</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF6DA6A31B2B0E93009BEE57</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>item.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF6DA6A41B2B0E93009BEE57</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF6DA6A31B2B0E93009BEE57</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF6DA6A51B2B0E9B009BEE57</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>items.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF6DA6A61B2B0E9B009BEE57</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF6DA6A51B2B0E9B009BEE57</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF6DA6A71B2B0F6F009BEE57</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ItemJsonSupportTest.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF6DA6A81B2B0F6F009BEE57</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF6DA6A71B2B0F6F009BEE57</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF6DA6A91B2B1048009BEE57</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>JsonUtils.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF6DA6AA1B2B1048009BEE57</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF6DA6A91B2B1048009BEE57</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>

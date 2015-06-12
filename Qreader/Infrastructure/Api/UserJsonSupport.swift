@@ -43,7 +43,7 @@ public struct UserJsonSupport {
         u.followeesCount = json[FOLLOWEES_COUNT].int
         u.followersCount = json[FOLLOWERS_COUNT].int
         u.githubLoginName = json[GITHUB_LOGIN_NAME].string
-        u.id = json[ID].string!
+        u.id = json[ID].string
         u.itemsCount = json[ITEMS_COUNT].int
         u.linkedInId = json[LINKEDIN_ID].string
         u.location = json[LOCATION].string
