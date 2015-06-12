@@ -29,8 +29,8 @@ public struct UserJsonSupport {
     public static func json2Users(json: JSON) -> [User]? {
         if let jsonArray = json.array {
             return jsonArray
-                .map{ UserJsonSupport.json2User($0) }
-                .filter{ $0 != nil }
+                .map { UserJsonSupport.json2User($0) }
+                .filter { $0 != nil }
                 .map { $0! }
         }
         return nil

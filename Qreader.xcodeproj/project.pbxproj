@@ -506,8 +506,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
 			<key>path</key>
 			<string>Supporting Files</string>
 			<key>sourceTree</key>
@@ -778,8 +776,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
 			<key>path</key>
 			<string>Supporting Files</string>
 			<key>sourceTree</key>
@@ -1104,14 +1100,10 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
-				<string>FF6DA6831B2AC77F009BEE57</string>
-				<string>FF6DA6801B2AC60A009BEE57</string>
 				<string>FF6DA67E1B2AC5E7009BEE57</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Infrastructure</string>
 			<key>path</key>
 			<string>Infrastructure</string>
 			<key>sourceTree</key>
@@ -1128,8 +1120,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Domain</string>
 			<key>path</key>
 			<string>Domain</string>
 			<key>sourceTree</key>
@@ -1144,8 +1134,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Application</string>
 			<key>path</key>
 			<string>Application</string>
 			<key>sourceTree</key>
@@ -1161,8 +1149,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>UI</string>
 			<key>path</key>
 			<string>UI</string>
 			<key>sourceTree</key>
@@ -1177,23 +1163,8 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Api</string>
 			<key>path</key>
 			<string>Api</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF6DA6801B2AC60A009BEE57</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Json</string>
-			<key>path</key>
-			<string>Json</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1216,19 +1187,6 @@ fi
 			<string>FF6DA6811B2AC633009BEE57</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>FF6DA6831B2AC77F009BEE57</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Utils</string>
-			<key>path</key>
-			<string>Utils</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>FF6DA6861B2AC923009BEE57</key>
 		<dict>
@@ -1338,8 +1296,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Infrastructure</string>
 			<key>path</key>
 			<string>Infrastructure</string>
 			<key>sourceTree</key>
@@ -1353,8 +1309,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Api</string>
 			<key>path</key>
 			<string>Api</string>
 			<key>sourceTree</key>
@@ -1388,8 +1342,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
 			<key>path</key>
 			<string>Resources</string>
 			<key>sourceTree</key>
@@ -1404,8 +1356,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Api</string>
 			<key>path</key>
 			<string>Api</string>
 			<key>sourceTree</key>
@@ -1419,8 +1369,6 @@ fi
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>text.json</string>
-			<key>name</key>
-			<string>users.json</string>
 			<key>path</key>
 			<string>users.json</string>
 			<key>sourceTree</key>

@@ -9,23 +9,32 @@ import Foundation
 
 public class Item {
     
-    let renderedBody: String? = nil
-    let body: String? = nil
-    let coediting: Bool? = nil
-    let createdAt: String? = nil
     let id: String
-    let isPrivate: Bool? = nil
-    let tags: [String]? = nil
     let title: String
-    let updatedAt: String? = nil
-    let url: String
     let user: User
+    let url: String
+    let renderedBody: String?
+    let body: String?
+    let coediting: Bool?
+    let createdAt: String?
+    let isPrivate: Bool?
+    let tags: [String]?
+    let updatedAt: String?
     
-    public init(id: String, title: String, user: User, url: String) {
+    public init(id: String, title: String, user: User, url: String,
+        renderedBody: String?, body: String?, coediting: Bool?,
+        createdAt: String?, isPrivate: Bool?, tags: [String]?, updatedAt: String?) {
         self.id = id
         self.title = title
         self.user = user
         self.url = url
+        self.renderedBody = renderedBody
+        self.body = body
+        self.coediting = coediting
+        self.createdAt = createdAt
+        self.isPrivate = isPrivate
+        self.tags = tags
+        self.updatedAt = updatedAt
     }
     
 }
