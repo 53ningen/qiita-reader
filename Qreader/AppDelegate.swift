@@ -6,6 +6,9 @@
 //
 import RxSwift
 import UIKit
+import Alamofire
+import SwiftyJSON
+import Alamofire_SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

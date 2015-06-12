@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC83111E624738B0E9A33E0 /* Pods_QreaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FC89BE5F17609B9968CCA6 /* Pods_QreaderTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3F85F882EF3C8113A6743809 /* Pods_Qreader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D262F6831D1E397CF9CA6BB /* Pods_Qreader.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FF6DA65A1B2ABDF9009BEE57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA6591B2ABDF9009BEE57 /* AppDelegate.swift */; };
 		FF6DA65C1B2ABDF9009BEE57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA65B1B2ABDF9009BEE57 /* ViewController.swift */; };
@@ -14,6 +15,15 @@
 		FF6DA6611B2ABDF9009BEE57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6DA6601B2ABDF9009BEE57 /* Images.xcassets */; };
 		FF6DA6641B2ABDF9009BEE57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF6DA6621B2ABDF9009BEE57 /* LaunchScreen.xib */; };
 		FF6DA6701B2ABDF9009BEE57 /* QreaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA66F1B2ABDF9009BEE57 /* QreaderTests.swift */; };
+		FF6DA6821B2AC633009BEE57 /* ItemsJsonSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA6811B2AC633009BEE57 /* ItemsJsonSupport.swift */; };
+		FF6DA6871B2AC923009BEE57 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA6861B2AC923009BEE57 /* Item.swift */; };
+		FF6DA6891B2AC9C2009BEE57 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA6881B2AC9C2009BEE57 /* User.swift */; };
+		FF6DA6911B2AD716009BEE57 /* ItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA6901B2AD716009BEE57 /* ItemBuilder.swift */; };
+		FF6DA6931B2AD75B009BEE57 /* UserBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA6921B2AD75B009BEE57 /* UserBuilder.swift */; };
+		FF6DA6951B2ADE1A009BEE57 /* UserJsonSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA6941B2ADE1A009BEE57 /* UserJsonSupport.swift */; };
+		FF6DA6991B2AE321009BEE57 /* UserJsonSupportTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6DA6981B2AE321009BEE57 /* UserJsonSupportTest.swift */; };
+		FF6DA69D1B2AE726009BEE57 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = FF6DA69C1B2AE726009BEE57 /* users.json */; };
+		FF6DA6A21B2B01C0009BEE57 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = FF6DA6A11B2B01C0009BEE57 /* user.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28FC89BE5F17609B9968CCA6 /* Pods_QreaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QreaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B6E0903BB4E8901EE76BA9 /* Pods-QreaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QreaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QreaderTests/Pods-QreaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A970335D1575B5EB8DCFF84 /* Pods-QreaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QreaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QreaderTests/Pods-QreaderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		553899872321B36E63893339 /* Pods-Qreader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qreader.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qreader/Pods-Qreader.release.xcconfig"; sourceTree = "<group>"; };
 		6D262F6831D1E397CF9CA6BB /* Pods_Qreader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qreader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95F3E98CB219EC21AC1167C /* Pods-Qreader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qreader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qreader/Pods-Qreader.debug.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +53,15 @@
 		FF6DA6691B2ABDF9009BEE57 /* QreaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QreaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6DA66E1B2ABDF9009BEE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF6DA66F1B2ABDF9009BEE57 /* QreaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QreaderTests.swift; sourceTree = "<group>"; };
+		FF6DA6811B2AC633009BEE57 /* ItemsJsonSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsJsonSupport.swift; sourceTree = "<group>"; };
+		FF6DA6861B2AC923009BEE57 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FF6DA6881B2AC9C2009BEE57 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF6DA6901B2AD716009BEE57 /* ItemBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemBuilder.swift; sourceTree = "<group>"; };
+		FF6DA6921B2AD75B009BEE57 /* UserBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserBuilder.swift; sourceTree = "<group>"; };
+		FF6DA6941B2ADE1A009BEE57 /* UserJsonSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserJsonSupport.swift; sourceTree = "<group>"; };
+		FF6DA6981B2AE321009BEE57 /* UserJsonSupportTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserJsonSupportTest.swift; sourceTree = "<group>"; };
+		FF6DA69C1B2AE726009BEE57 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = QreaderTests/users.json; sourceTree = SOURCE_ROOT; };
+		FF6DA6A11B2B01C0009BEE57 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC83111E624738B0E9A33E0 /* Pods_QreaderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				6D262F6831D1E397CF9CA6BB /* Pods_Qreader.framework */,
+				28FC89BE5F17609B9968CCA6 /* Pods_QreaderTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +136,8 @@
 		FF6DA66C1B2ABDF9009BEE57 /* QreaderTests */ = {
 			isa = PBXGroup;
 			children = (
+				FF6DA69A1B2AE70A009BEE57 /* Resources */,
+				FF6DA6961B2AE20F009BEE57 /* Infrastructure */,
 				FF6DA66F1B2ABDF9009BEE57 /* QreaderTests.swift */,
 				FF6DA66D1B2ABDF9009BEE57 /* Supporting Files */,
 			);
@@ -129,6 +155,9 @@
 		FF6DA67A1B2ABF4D009BEE57 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				FF6DA6831B2AC77F009BEE57 /* Utils */,
+				FF6DA6801B2AC60A009BEE57 /* Json */,
+				FF6DA67E1B2AC5E7009BEE57 /* Api */,
 			);
 			name = Infrastructure;
 			sourceTree = "<group>";
@@ -136,6 +165,10 @@
 		FF6DA67B1B2ABF57009BEE57 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				FF6DA6861B2AC923009BEE57 /* Item.swift */,
+				FF6DA6901B2AD716009BEE57 /* ItemBuilder.swift */,
+				FF6DA6881B2AC9C2009BEE57 /* User.swift */,
+				FF6DA6921B2AD75B009BEE57 /* UserBuilder.swift */,
 			);
 			name = Domain;
 			sourceTree = "<group>";
@@ -159,11 +192,69 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
+		FF6DA67E1B2AC5E7009BEE57 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA6811B2AC633009BEE57 /* ItemsJsonSupport.swift */,
+				FF6DA6941B2ADE1A009BEE57 /* UserJsonSupport.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		FF6DA6801B2AC60A009BEE57 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		FF6DA6831B2AC77F009BEE57 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FF6DA6961B2AE20F009BEE57 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA6971B2AE223009BEE57 /* Api */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		FF6DA6971B2AE223009BEE57 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA6981B2AE321009BEE57 /* UserJsonSupportTest.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		FF6DA69A1B2AE70A009BEE57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA69B1B2AE713009BEE57 /* Api */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FF6DA69B1B2AE713009BEE57 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				FF6DA69C1B2AE726009BEE57 /* users.json */,
+				FF6DA6A11B2B01C0009BEE57 /* user.json */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
 		FFCECD719B38E1838AA6803D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E95F3E98CB219EC21AC1167C /* Pods-Qreader.debug.xcconfig */,
 				553899872321B36E63893339 /* Pods-Qreader.release.xcconfig */,
+				3A970335D1575B5EB8DCFF84 /* Pods-QreaderTests.debug.xcconfig */,
+				31B6E0903BB4E8901EE76BA9 /* Pods-QreaderTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -195,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF6DA6761B2ABDF9009BEE57 /* Build configuration list for PBXNativeTarget "QreaderTests" */;
 			buildPhases = (
+				D2F158E2C3DCE8C5D6034864 /* Check Pods Manifest.lock */,
 				FF6DA6651B2ABDF9009BEE57 /* Sources */,
 				FF6DA6661B2ABDF9009BEE57 /* Frameworks */,
 				FF6DA6671B2ABDF9009BEE57 /* Resources */,
+				C07EC742F67DBB472BF5C61E /* Embed Pods Frameworks */,
+				A3F977C165E244365FB12662 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +355,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6DA69D1B2AE726009BEE57 /* users.json in Resources */,
+				FF6DA6A21B2B01C0009BEE57 /* user.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +393,51 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A3F977C165E244365FB12662 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QreaderTests/Pods-QreaderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C07EC742F67DBB472BF5C61E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QreaderTests/Pods-QreaderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2F158E2C3DCE8C5D6034864 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		FECF2BD8C12002ECF3E9C48B /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,7 +460,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6DA6871B2AC923009BEE57 /* Item.swift in Sources */,
 				FF6DA65C1B2ABDF9009BEE57 /* ViewController.swift in Sources */,
+				FF6DA6931B2AD75B009BEE57 /* UserBuilder.swift in Sources */,
+				FF6DA6891B2AC9C2009BEE57 /* User.swift in Sources */,
+				FF6DA6951B2ADE1A009BEE57 /* UserJsonSupport.swift in Sources */,
+				FF6DA6911B2AD716009BEE57 /* ItemBuilder.swift in Sources */,
+				FF6DA6821B2AC633009BEE57 /* ItemsJsonSupport.swift in Sources */,
 				FF6DA65A1B2ABDF9009BEE57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6DA6991B2AE321009BEE57 /* UserJsonSupportTest.swift in Sources */,
 				FF6DA6701B2ABDF9009BEE57 /* QreaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +617,7 @@
 		};
 		FF6DA6771B2ABDF9009BEE57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A970335D1575B5EB8DCFF84 /* Pods-QreaderTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -488,6 +637,7 @@
 		};
 		FF6DA6781B2ABDF9009BEE57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B6E0903BB4E8901EE76BA9 /* Pods-QreaderTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
