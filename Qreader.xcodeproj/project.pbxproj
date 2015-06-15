@@ -387,6 +387,7 @@ fi
 				<string>FF6DA6871B2AC923009BEE57</string>
 				<string>FF6DA65C1B2ABDF9009BEE57</string>
 				<string>FF6DA6931B2AD75B009BEE57</string>
+				<string>FF6DA6BC1B2E9546009BEE57</string>
 				<string>FF6DA6891B2AC9C2009BEE57</string>
 				<string>FF6DA6AE1B2B1940009BEE57</string>
 				<string>FF6DA6951B2ADE1A009BEE57</string>
@@ -1171,6 +1172,7 @@ fi
 				<string>FF6DA6811B2AC633009BEE57</string>
 				<string>FF6DA6941B2ADE1A009BEE57</string>
 				<string>FF6DA6AD1B2B1940009BEE57</string>
+				<string>FF6DA6BB1B2E9546009BEE57</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1596,6 +1598,26 @@ fi
 		<dict>
 			<key>fileRef</key>
 			<string>FF6DA6B31B2E8067009BEE57</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF6DA6BB1B2E9546009BEE57</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>QiitaApi.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF6DA6BC1B2E9546009BEE57</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF6DA6BB1B2E9546009BEE57</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
