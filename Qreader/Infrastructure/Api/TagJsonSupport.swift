@@ -23,8 +23,9 @@ public struct TagJsonSupport {
                 .map { TagJsonSupport.json2tag($0) }
                 .filter { $0 != nil }
                 .map { $0! }
-         }
-        return nil
+        } else {
+            return nil
+        }
     }
     
     public static func json2tag(json: JSON) -> Tag? {
@@ -33,8 +34,9 @@ public struct TagJsonSupport {
             let id = json[ID].string,
             let itemsCount = json[ITEMS_COUNT].int {
                 return Tag(id: id, iconUrl: iconUrl, followersCount: followersCount, itemsCount: itemsCount)
+        } else {
+            return nil
         }
-        return nil
     }
     
 }

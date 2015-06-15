@@ -32,8 +32,9 @@ public struct UserJsonSupport {
                 .map { UserJsonSupport.json2User($0) }
                 .filter { $0 != nil }
                 .map { $0! }
+        } else {
+            return nil
         }
-        return nil
     }
 
     public static func json2User(json: JSON) -> User? {

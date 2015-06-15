@@ -28,8 +28,9 @@ public struct ItemJsonSupport {
                 .map { ItemJsonSupport.json2Item($0) }
                 .filter { $0 != nil }
                 .map { $0! }
-          }
-        return nil
+        } else {
+            return nil
+        }
     }
 
     public static func json2Item(json: JSON) -> Item? {
