@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hIR-XD-1cH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,70 +15,13 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9s-Yu-iw5">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Fap-LZ-6ah" kind="show" id="OWf-z0-PU2"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="a9s-Yu-iw5" secondAttribute="centerY" id="9uL-uj-RhN"/>
-                            <constraint firstAttribute="centerX" secondItem="a9s-Yu-iw5" secondAttribute="centerX" id="uvq-PD-6qL"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KUp-cY-QNn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1365" y="1044"/>
-        </scene>
-        <!--Item View Controller-->
-        <scene sceneID="xbi-qS-WQZ">
-            <objects>
-                <viewController id="Fap-LZ-6ah" customClass="ItemViewController" customModule="Qreader" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="imp-i9-wzP"/>
-                        <viewControllerLayoutGuide type="bottom" id="D0D-6P-Oop"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="H9Y-ki-Ggz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhB-Kd-GGg">
-                                <rect key="frame" x="283" y="285" width="35" height="30"/>
-                                <state key="normal" title="hoge">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25U-4T-55O">
-                                <rect key="frame" x="16" y="332" width="568" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="25U-4T-55O" firstAttribute="leading" secondItem="H9Y-ki-Ggz" secondAttribute="leadingMargin" id="3na-ow-3Ko"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="25U-4T-55O" secondAttribute="trailing" id="CYV-tm-LkP"/>
-                            <constraint firstAttribute="centerX" secondItem="dhB-Kd-GGg" secondAttribute="centerX" id="W5D-mK-3Sh"/>
-                            <constraint firstAttribute="centerY" secondItem="dhB-Kd-GGg" secondAttribute="centerY" id="ckg-Bs-vyL"/>
-                            <constraint firstItem="25U-4T-55O" firstAttribute="top" secondItem="dhB-Kd-GGg" secondAttribute="bottom" constant="17" id="kR5-Da-fXW"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="button" destination="dhB-Kd-GGg" id="s72-vV-NE7"/>
-                        <outlet property="textField" destination="25U-4T-55O" id="qSG-MF-JxD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YTf-VN-IqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2083" y="1044"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FiC-32-Mbh">
