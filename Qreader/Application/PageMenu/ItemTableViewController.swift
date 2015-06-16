@@ -15,7 +15,7 @@ class ItemTableViewController: UITableViewController {
     private static let CELL_ID = "ItemTableViewCell"
     
     let bundle: NSBundle = NSBundle.mainBundle()
-    let items: Observable<[Item]> = returnElement([])
+    var items: [Item] = []
         
     override func viewDidLoad() {
         super.viewDidLoad()
