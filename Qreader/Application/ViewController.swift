@@ -16,7 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        api.getItems() >- subscribe(next: { println("success: \($0)")}, error: { "error: \($0)" }, completed: { println($0) })
+//        api.getItems()
+//            >- subscribe(
+//                next: { println("success: \($0)") },
+//                error: { "error: \($0)" },
+//                completed: { println($0) }
+//            )
     }
 
     override func didReceiveMemoryWarning() {
