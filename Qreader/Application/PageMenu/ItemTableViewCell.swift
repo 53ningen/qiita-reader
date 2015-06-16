@@ -9,17 +9,25 @@ import UIKit
 
 class ItemTableViewCell: UITableViewCell {
 
+    var item: Item?
+
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var itemTitleLabel: UILabel!
+    @IBOutlet weak var itemCreatedDateLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+
+    func setItem(item: Item) {
+        self.item = item
+        itemTitleLabel.text = item.title
+        itemCreatedDateLabel.text = item.updatedAt
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
-    
+
 }

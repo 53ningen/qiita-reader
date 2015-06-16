@@ -9,9 +9,15 @@ import RxSwift
 import RxCocoa
 import UIKit
 import PageMenu
+import MMDrawerController
 
 class ViewController: UIViewController, CAPSPageMenuDelegate {
-    
+
+    var items: [Item] = []
+    var stocks: [Item] = []
+    var tags: [Tag] = []
+
+    var drawerController: MMDrawerController?
     var pageMenu: CAPSPageMenu?
     let bundle: NSBundle = NSBundle.mainBundle()
     @IBOutlet weak var uiView: UIView!
@@ -20,9 +26,14 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
 
     private let api: QiitaApi = QiitaApi(dataScheduler: MainScheduler.sharedInstance, urlSession: NSURLSession.sharedSession())
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        initPageMenu()
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        combineLatest(api.getItems(), api.getStocks("53ningen"), { (items: $0, stocks: $1) }) >- subscribeNext {
+            (items: [Item], stocks: [Item]) in
+            self.items = items
+            self.stocks = stocks
+            self.initPageMenu()
+        }
     }
 
     override func viewDidLoad() {
@@ -47,7 +58,9 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
         // Initialize view controllers to display and place in array
         let itemsController : ItemTableViewController = ItemTableViewController(nibName: ViewController.TABLE_VIEW_ID, bundle: bundle)
         itemsController.title = "ITEMS"
+        itemsController.items = self.items
         let stocksController : ItemTableViewController = ItemTableViewController(nibName: ViewController.TABLE_VIEW_ID, bundle: bundle)
+        stocksController.items = self.stocks
         stocksController.title = "STOCKS"
         let tagsController : ItemTableViewController = ItemTableViewController(nibName: ViewController.TABLE_VIEW_ID, bundle: bundle)
         tagsController.title = "TAGS"
@@ -67,4 +80,9 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: parameters)
         self.uiView.addSubview(pageMenu!.view)
     }
+    
+    private func initDrawerController() {
+        drawerController = MMDrawerController(nibName: "", bundle: bundle)
+    }
+    
 }

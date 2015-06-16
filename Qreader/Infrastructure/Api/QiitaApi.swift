@@ -18,6 +18,7 @@ public class QiitaApi {
     private static let API_END_POINT: String = "http://qiita.com/api/v2/"
     private static let API_ITEMS: String = "items"
     private static let API_TAGS: String = "tags"
+    private static let API_USERS: String = "users"
     private static let API_STOCKS: String = "stocks"
     private static let ACCESS_TOKEN: String = ""
 
@@ -65,7 +66,7 @@ public class QiitaApi {
     }
     
     public func getStocks(userId: String) -> Observable<[Item]> {
-        let url: NSURL! = NSURL(string: QiitaApi.API_END_POINT + userId + "/" + QiitaApi.API_STOCKS)
+        let url: NSURL! = NSURL(string: QiitaApi.API_END_POINT + QiitaApi.API_USERS + "/" + userId + "/" + QiitaApi.API_STOCKS)
         let request: NSURLRequest! = NSURLRequest(URL: url)
         return self.urlSession.rx_response(request)
             >- map { (maybeData: NSData?, maybeResponse: NSURLResponse?) in

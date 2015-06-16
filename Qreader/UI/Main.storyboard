@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Qiita Reader-->
         <scene sceneID="XjT-AJ-yC2">
             <objects>
                 <viewController id="1uI-OV-wxZ" customClass="ViewController" customModule="Qreader" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                             <constraint firstAttribute="trailing" secondItem="I26-yV-EMF" secondAttribute="trailing" id="sGh-mf-x65"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fvT-Th-jEh"/>
+                    <navigationItem key="navigationItem" title="Qiita Reader" id="kbP-DT-OH2"/>
                     <connections>
                         <outlet property="uiView" destination="I26-yV-EMF" id="ImO-za-SVE"/>
                     </connections>

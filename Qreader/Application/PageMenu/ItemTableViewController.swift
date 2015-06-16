@@ -14,47 +14,43 @@ class ItemTableViewController: UITableViewController {
     
     private static let CELL_ID = "ItemTableViewCell"
     
+    let itemViewStoryBoard: UIStoryboard = UIStoryboard(name: "ItemView", bundle: nil)
     let bundle: NSBundle = NSBundle.mainBundle()
     var items: [Item] = []
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerNib(UINib(nibName: ItemTableViewController.CELL_ID, bundle: bundle), forCellReuseIdentifier: ItemTableViewController.CELL_ID)
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 5
+        return items.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(ItemTableViewController.CELL_ID, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(ItemTableViewController.CELL_ID, forIndexPath: indexPath) as! ItemTableViewCell
+        cell.setItem(items[indexPath.item])
         return cell
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 64.0
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let controller = itemViewStoryBoard.instantiateViewControllerWithIdentifier("ItemView") as! ItemViewController
+        controller.setItem(items[indexPath.item])
+        self.presentViewController(controller, animated: true, completion: nil)
     }
 
     /*
