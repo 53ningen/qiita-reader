@@ -8,27 +8,39 @@
 import RxSwift
 import RxCocoa
 import UIKit
+import PageMenu
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CAPSPageMenuDelegate {
     
+    let bundle: NSBundle = NSBundle.mainBundle()
+    var pageMenu: CAPSPageMenu?
+
     private let api: QiitaApi = QiitaApi(dataScheduler: MainScheduler.sharedInstance, urlSession: NSURLSession.sharedSession())
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        api.getItems()
-//            >- subscribe(
-//                next: { println("success: \($0)") },
-//                error: { "error: \($0)" },
-//                completed: { println($0) }
-//            )
+        initPageMenuView()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    private func initPageMenuView() {
+        let itemsPageMenu: UIViewController = UIViewController(nibName: "ItemsPageMenuViewController", bundle: bundle)
+        itemsPageMenu.title = "items"
+        let stocksPageManu: UIViewController = UIViewController(nibName: "StocksPageMenuViewController", bundle: bundle)
+        stocksPageManu.title = "stocks"
+        let controllerArray: [UIViewController] = [itemsPageMenu, stocksPageManu]
+        let parameters: [CAPSPageMenuOption] = [
+            .MenuItemSeparatorWidth(4.3),
+            .UseMenuLikeSegmentedControl(true),
+            .MenuItemSeparatorPercentageHeight(0.1)
+        ]
+        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: parameters)
+        self.view.addSubview(pageMenu!.view)
+        pageMenu!.delegate = self
+    }
+    
 }
-

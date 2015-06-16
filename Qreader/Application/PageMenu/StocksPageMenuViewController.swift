@@ -1,21 +1,17 @@
 //
-//  ItemViewController.swift
+//  StocksPageMenuViewController.swift
 //  Qreader
 //
-//  Copyright (c) 2015年 gomi. All rights reserved.
+//  Copyright (c) 2015 gomi. All rights reserved.
 //
 
-import RxSwift
-import RxCocoa
 import UIKit
 
-class ItemViewController: UIViewController {
-    
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var textField: UITextField!
-    
+class StocksPageMenuViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
