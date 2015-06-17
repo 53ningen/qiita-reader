@@ -27,7 +27,7 @@ class TagJsonSupportTest: XCTestCase {
         XCTAssertEqual(tags![0].followersCount, 100, "tag")
         XCTAssertEqual(tags![1].id, "gochiusa", "tag")
         XCTAssertEqual(tags![1].itemsCount, 9999999, "tag")
-        XCTAssertEqual(tags![1].iconUrl!, "https://s3-ap-northeast-1.amazonaws.com/qiita-tag-image/9de6a11d330f5694820082438f88ccf4a1b289b2/medium.jpg", "tag")
+        XCTAssertEqual(tags![1].iconUrl == nil, true, "tag")
         XCTAssertEqual(tags![1].followersCount, 12470, "tag")
     }
 

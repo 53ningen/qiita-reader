@@ -1,60 +1,52 @@
 //
-//  ItemTableViewController.swift
+//  TagTableViewController.swift
 //  Qreader
 //
 //  Copyright (c) 2015 gomi. All rights reserved.
 //
 
-
-import RxSwift
-import RxCocoa
 import UIKit
 
-class ItemTableViewController: UITableViewController {
-    
-    var parentNavigationController: UINavigationController?
-    private static let CELL_ID = "ItemTableViewCell"
-    
-    let itemViewStoryBoard: UIStoryboard = UIStoryboard(name: "ItemView", bundle: nil)
-    let bundle: NSBundle = NSBundle.mainBundle()
-    var items: [Item] = []
-    
+class TagTableViewController: UITableViewController {
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.registerNib(UINib(nibName: ItemTableViewController.CELL_ID, bundle: bundle), forCellReuseIdentifier: ItemTableViewController.CELL_ID)
-        navigationController?.hidesBarsOnSwipe = true
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
+
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        // #warning Potentially incomplete method implementation.
+        // Return the number of sections.
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        // #warning Incomplete method implementation.
+        // Return the number of rows in the section.
+        return 0
     }
 
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(ItemTableViewController.CELL_ID, forIndexPath: indexPath) as! ItemTableViewCell
-        cell.setItem(items[indexPath.item])
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+
+        // Configure the cell...
+
         return cell
     }
-    
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 64.0
-    }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let controller = itemViewStoryBoard.instantiateViewControllerWithIdentifier("ItemView") as! ItemViewController
-        controller.setItem(items[indexPath.item])
-        controller.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-        parentNavigationController?.pushViewController(controller, animated: true)
-    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

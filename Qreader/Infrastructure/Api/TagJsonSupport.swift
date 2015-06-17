@@ -30,10 +30,9 @@ public struct TagJsonSupport {
     
     public static func json2tag(json: JSON) -> Tag? {
         if let followersCount = json[FOLLOWERS_COUNT].int,
-            let iconUrl = json[ICON_URL].string,
             let id = json[ID].string,
             let itemsCount = json[ITEMS_COUNT].int {
-                return Tag(id: id, iconUrl: iconUrl, followersCount: followersCount, itemsCount: itemsCount)
+                return Tag(id: id, iconUrl: json[ICON_URL].string, followersCount: followersCount, itemsCount: itemsCount)
         } else {
             return nil
         }

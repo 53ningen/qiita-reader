@@ -300,6 +300,8 @@ fi
 			<array>
 				<string>FF07859C1B30310200B4328B</string>
 				<string>FF0785A01B3035CD00B4328B</string>
+				<string>FF14E81E1B316E2B004F3713</string>
+				<string>FF14E82A1B316F88004F3713</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -314,6 +316,8 @@ fi
 			<array>
 				<string>FF07859D1B30310200B4328B</string>
 				<string>FF0785A11B3035CD00B4328B</string>
+				<string>FF14E81F1B316E2B004F3713</string>
+				<string>FF14E82B1B316F88004F3713</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -468,6 +472,90 @@ fi
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>FF14E81E1B316E2B004F3713</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>TagCollectionViewCell.swift</string>
+			<key>path</key>
+			<string>TagCollectionViewCell.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF14E81F1B316E2B004F3713</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>TagCollectionViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF14E8201B316E2B004F3713</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF14E81E1B316E2B004F3713</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF14E8211B316E2B004F3713</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF14E81F1B316E2B004F3713</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF14E82A1B316F88004F3713</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TagCollectionViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF14E82B1B316F88004F3713</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>TagCollectionViewController.xib</string>
+			<key>path</key>
+			<string>TagCollectionViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF14E82C1B316F88004F3713</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF14E82A1B316F88004F3713</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FF14E82D1B316F88004F3713</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF14E82B1B316F88004F3713</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>FF6DA64B1B2ABDF9009BEE57</key>
 		<dict>
 			<key>children</key>
@@ -571,6 +659,8 @@ fi
 				<string>FF6DA6951B2ADE1A009BEE57</string>
 				<string>FF6DA6911B2AD716009BEE57</string>
 				<string>FF6DA6AC1B2B17A1009BEE57</string>
+				<string>FF14E82C1B316F88004F3713</string>
+				<string>FF14E8201B316E2B004F3713</string>
 				<string>FF6DA6821B2AC633009BEE57</string>
 				<string>FF6DA65A1B2ABDF9009BEE57</string>
 			</array>
@@ -602,8 +692,10 @@ fi
 				<string>FF6DA6641B2ABDF9009BEE57</string>
 				<string>FF6DA6611B2ABDF9009BEE57</string>
 				<string>FFAC1D2E1B3059BB00880C74</string>
+				<string>FF14E8211B316E2B004F3713</string>
 				<string>FF0785AA1B304D9000B4328B</string>
 				<string>FF0785A31B3035CD00B4328B</string>
+				<string>FF14E82D1B316F88004F3713</string>
 			</array>
 			<key>isa</key>
 			<string>PBXResourcesBuildPhase</string>

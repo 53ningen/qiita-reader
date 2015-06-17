@@ -46,14 +46,8 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OuQ-KH-8b9">
                                 <rect key="frame" x="0.0" y="164" width="600" height="2"/>
                             </progressView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wz-HX-aBV">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <items>
-                                    <barButtonItem systemItem="done" id="vtl-cc-dWI"/>
-                                </items>
-                            </toolbar>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZrB-uQ-1N9">
-                                <rect key="frame" x="0.0" y="166" width="600" height="390"/>
+                                <rect key="frame" x="0.0" y="166" width="600" height="434"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
@@ -63,14 +57,11 @@
                             <constraint firstItem="ZrB-uQ-1N9" firstAttribute="top" secondItem="OuQ-KH-8b9" secondAttribute="bottom" id="6Iv-iA-RSt"/>
                             <constraint firstItem="OuQ-KH-8b9" firstAttribute="leading" secondItem="ajj-5I-pwN" secondAttribute="leading" id="7gJ-uG-RNE"/>
                             <constraint firstItem="HQV-YN-4oM" firstAttribute="leading" secondItem="ajj-5I-pwN" secondAttribute="leading" id="GTz-zn-35h"/>
-                            <constraint firstItem="2wz-HX-aBV" firstAttribute="leading" secondItem="ajj-5I-pwN" secondAttribute="leading" id="NNC-GT-H4o"/>
-                            <constraint firstAttribute="trailing" secondItem="2wz-HX-aBV" secondAttribute="trailing" id="NTi-6V-5dU"/>
                             <constraint firstAttribute="trailing" secondItem="HQV-YN-4oM" secondAttribute="trailing" id="Sr4-UA-Euy"/>
+                            <constraint firstItem="AJZ-Fm-8gl" firstAttribute="top" secondItem="ZrB-uQ-1N9" secondAttribute="bottom" id="U6X-dI-Tr5"/>
                             <constraint firstItem="ZrB-uQ-1N9" firstAttribute="leading" secondItem="ajj-5I-pwN" secondAttribute="leading" id="WAI-Rs-DnE"/>
                             <constraint firstAttribute="trailing" secondItem="OuQ-KH-8b9" secondAttribute="trailing" id="WJt-rv-RRo"/>
-                            <constraint firstItem="2wz-HX-aBV" firstAttribute="top" secondItem="ZrB-uQ-1N9" secondAttribute="bottom" id="aVT-0V-vVz"/>
                             <constraint firstAttribute="trailing" secondItem="ZrB-uQ-1N9" secondAttribute="trailing" id="akW-jU-DnN"/>
-                            <constraint firstItem="AJZ-Fm-8gl" firstAttribute="top" secondItem="2wz-HX-aBV" secondAttribute="bottom" id="sQD-aM-MRC"/>
                             <constraint firstItem="OuQ-KH-8b9" firstAttribute="top" secondItem="HQV-YN-4oM" secondAttribute="bottom" id="vVU-CT-ISZ"/>
                         </constraints>
                     </view>
@@ -81,7 +72,6 @@
                         <outlet property="authorLabel" destination="4rT-QL-DaY" id="Jbh-17-nhI"/>
                         <outlet property="itemTitleLabel" destination="XMC-8Q-FWU" id="aUf-vG-mFK"/>
                         <outlet property="navItem" destination="YvK-Q8-6Xg" id="doj-Ad-zuZ"/>
-                        <outlet property="toolbar" destination="2wz-HX-aBV" id="ekM-PG-dXy"/>
                         <outlet property="webView" destination="ZrB-uQ-1N9" id="fHk-t4-noX"/>
                     </connections>
                 </viewController>

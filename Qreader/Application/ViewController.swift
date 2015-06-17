@@ -25,6 +25,7 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
     @IBOutlet weak var reloadButton: UIBarButtonItem!
     
     private static let TABLE_VIEW_ID = "ItemTableViewController"
+    private static let TAG_VIEW_ID = "TagCollectionViewController"
 
     private let api: QiitaApi = QiitaApi(dataScheduler: MainScheduler.sharedInstance, urlSession: NSURLSession.sharedSession())
     
@@ -42,7 +43,7 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
     }
 
     override func viewDidLoad() {
-        api.getTags() >- subscribeNext { println($0) }
+        
         super.viewDidLoad()
     }
     
@@ -65,11 +66,14 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
         let itemsController : ItemTableViewController = ItemTableViewController(nibName: ViewController.TABLE_VIEW_ID, bundle: bundle)
         itemsController.title = "ITEMS"
         itemsController.items = self.items
+        itemsController.parentNavigationController = self.navigationController
         let stocksController : ItemTableViewController = ItemTableViewController(nibName: ViewController.TABLE_VIEW_ID, bundle: bundle)
         stocksController.items = self.stocks
         stocksController.title = "STOCKS"
-        let tagsController : ItemTableViewController = ItemTableViewController(nibName: ViewController.TABLE_VIEW_ID, bundle: bundle)
+        stocksController.parentNavigationController = self.navigationController
+        let tagsController : TagCollectionViewController = TagCollectionViewController(nibName: ViewController.TAG_VIEW_ID, bundle: bundle)
         tagsController.title = "TAGS"
+        tagsController.tags = tags
         let controllerArray : [UIViewController] = [itemsController, stocksController, tagsController]
         // Customize menu (Optional)
         let parameters: [CAPSPageMenuOption] = [
