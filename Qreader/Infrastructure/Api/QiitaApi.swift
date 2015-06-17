@@ -20,7 +20,8 @@ public class QiitaApi {
     private static let API_TAGS: String = "tags"
     private static let API_USERS: String = "users"
     private static let API_STOCKS: String = "stocks"
-    private static let ACCESS_TOKEN: String = ""
+    private static let API_AUTHENTICATED_USER: String = "authenticated_user"
+    private static let ACCESS_TOKEN: String = "Bearer "
 
     public init(dataScheduler: ImmediateScheduler, urlSession: NSURLSession) {
         self.dataScheduler = dataScheduler
@@ -33,8 +34,9 @@ public class QiitaApi {
     
     public func getItems(query: String) -> Observable<[Item]> {
         let url: NSURL! = NSURL(string: QiitaApi.API_END_POINT + QiitaApi.API_ITEMS)
-        let request: NSURLRequest! = NSURLRequest(URL: url)
-        return self.urlSession.rx_response(request)
+        let requestBuilder = NSMutableURLRequest(URL: url)
+        requestBuilder.addValue(QiitaApi.ACCESS_TOKEN, forHTTPHeaderField: "Authorization")
+        return self.urlSession.rx_response(requestBuilder)
             >- map { (maybeData: NSData?, maybeResponse: NSURLResponse?) in
                 if let json = self.getJson(maybeData), let items = ItemJsonSupport.json2Items(json) {
                     return items
@@ -79,6 +81,24 @@ public class QiitaApi {
             >- observeSingleOn(dataScheduler)
             >- catch { result in
                 return returnElement([])
+        }
+    }
+    
+    public func getAuthenticatedUser() -> Observable<User?> {
+        let url: NSURL! = NSURL(string: QiitaApi.API_END_POINT + QiitaApi.API_AUTHENTICATED_USER)
+        let requestBuilder = NSMutableURLRequest(URL: url)
+        requestBuilder.addValue(QiitaApi.ACCESS_TOKEN, forHTTPHeaderField: "Authorization")
+        return self.urlSession.rx_response(requestBuilder)
+            >- map { (maybeData: NSData?, maybeResponse: NSURLResponse?) in
+                if let json = self.getJson(maybeData), let user = UserJsonSupport.json2User(json) {
+                    return user
+                } else {
+                    return nil
+                }
+            }
+            >- observeSingleOn(dataScheduler)
+            >- catch { result in
+                return returnElement(nil)
         }
     }
     

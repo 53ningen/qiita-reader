@@ -9,7 +9,7 @@ target 'Qreader' do
   pod 'RxCocoa'
   pod 'Alamofire', '~> 1.2.0'
   pod 'SwiftyJSON'
-  pod 'Alamofire-SwiftyJSON', :git => "https://github.com/SwiftyJSON/Alamofire-SwiftyJSON.git"
+  #pod 'Alamofire-SwiftyJSON', :git => "https://github.com/SwiftyJSON/Alamofire-SwiftyJSON.git"
   pod 'MMDrawerController', '~> 0.5.7'
 end
 

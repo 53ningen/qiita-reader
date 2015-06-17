@@ -21,22 +21,28 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
     var pageMenu: CAPSPageMenu?
     let bundle: NSBundle = NSBundle.mainBundle()
     @IBOutlet weak var uiView: UIView!
-
+    @IBOutlet weak var progress: UIProgressView!
+    @IBOutlet weak var reloadButton: UIBarButtonItem!
+    
     private static let TABLE_VIEW_ID = "ItemTableViewController"
 
     private let api: QiitaApi = QiitaApi(dataScheduler: MainScheduler.sharedInstance, urlSession: NSURLSession.sharedSession())
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        combineLatest(api.getItems(), api.getStocks("53ningen"), { (items: $0, stocks: $1) }) >- subscribeNext {
-            (items: [Item], stocks: [Item]) in
+        progress.progress = 0.2
+        zip(api.getItems(), zip(api.getStocks("gomi_ningen"), api.getTags(), { (stocks: $0, tags: $1) }), { items, stocksAndTags in (items, stocksAndTags.stocks, stocksAndTags.tags) }) >- subscribeNext {
+            (items, stocks, tags) in
             self.items = items
             self.stocks = stocks
+            self.tags = tags
             self.initPageMenu()
+            self.progress.progress = 1.0
         }
     }
 
     override func viewDidLoad() {
+        api.getTags() >- subscribeNext { println($0) }
         super.viewDidLoad()
     }
     

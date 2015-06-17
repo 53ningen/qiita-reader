@@ -10,6 +10,7 @@ import UIKit
 class ItemViewController: UIViewController {
 
     var item: Item?
+    @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var itemTitleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!

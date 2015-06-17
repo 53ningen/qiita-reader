@@ -21,6 +21,7 @@ class ItemTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.registerNib(UINib(nibName: ItemTableViewController.CELL_ID, bundle: bundle), forCellReuseIdentifier: ItemTableViewController.CELL_ID)
+        navigationController?.hidesBarsOnSwipe = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,6 +51,7 @@ class ItemTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let controller = itemViewStoryBoard.instantiateViewControllerWithIdentifier("ItemView") as! ItemViewController
         controller.setItem(items[indexPath.item])
+        controller.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve 
         self.presentViewController(controller, animated: true, completion: nil)
     }
 

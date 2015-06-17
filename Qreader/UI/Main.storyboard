@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MjQ-MI-xiH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LS1-qW-odk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -9,52 +9,62 @@
             <objects>
                 <viewController id="1uI-OV-wxZ" customClass="ViewController" customModule="Qreader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Jcg-dx-NKd"/>
-                        <viewControllerLayoutGuide type="bottom" id="Nan-F1-7bT"/>
+                        <viewControllerLayoutGuide type="top" id="cxY-f4-VoD"/>
+                        <viewControllerLayoutGuide type="bottom" id="XzO-J5-QmL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bmF-BG-vqa">
+                    <view key="view" contentMode="scaleToFill" id="Yxp-j8-Qao">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I26-yV-EMF">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTH-5N-iGW">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A1p-JZ-0Lt">
+                                <rect key="frame" x="0.0" y="64" width="600" height="2"/>
+                            </progressView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="I26-yV-EMF" secondAttribute="bottom" id="Ci2-tf-NGm"/>
-                            <constraint firstItem="I26-yV-EMF" firstAttribute="top" secondItem="Jcg-dx-NKd" secondAttribute="bottom" id="Ik6-Q7-L3A"/>
-                            <constraint firstItem="I26-yV-EMF" firstAttribute="leading" secondItem="bmF-BG-vqa" secondAttribute="leading" id="YSH-wx-byW"/>
-                            <constraint firstAttribute="trailing" secondItem="I26-yV-EMF" secondAttribute="trailing" id="sGh-mf-x65"/>
+                            <constraint firstItem="A1p-JZ-0Lt" firstAttribute="top" secondItem="cxY-f4-VoD" secondAttribute="bottom" id="6Y8-HQ-L6Y"/>
+                            <constraint firstAttribute="trailing" secondItem="A1p-JZ-0Lt" secondAttribute="trailing" id="AGb-Yt-JU2"/>
+                            <constraint firstAttribute="trailing" secondItem="BTH-5N-iGW" secondAttribute="trailing" id="DGv-U8-fwn"/>
+                            <constraint firstItem="BTH-5N-iGW" firstAttribute="top" secondItem="cxY-f4-VoD" secondAttribute="bottom" id="JXI-p3-mI8"/>
+                            <constraint firstItem="BTH-5N-iGW" firstAttribute="leading" secondItem="Yxp-j8-Qao" secondAttribute="leading" id="R1A-EC-lQC"/>
+                            <constraint firstAttribute="bottom" secondItem="BTH-5N-iGW" secondAttribute="bottom" id="Uvz-US-D0b"/>
+                            <constraint firstItem="A1p-JZ-0Lt" firstAttribute="leading" secondItem="Yxp-j8-Qao" secondAttribute="leading" id="dPK-Uk-AM4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Qiita Reader" id="kbP-DT-OH2"/>
+                    <navigationItem key="navigationItem" title="Qiita Reader" id="N8W-0p-rcq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="HZQ-xN-FC9"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="uiView" destination="I26-yV-EMF" id="ImO-za-SVE"/>
+                        <outlet property="progress" destination="A1p-JZ-0Lt" id="K1h-kO-ZUo"/>
+                        <outlet property="reloadButton" destination="HZQ-xN-FC9" id="hQc-cP-fQf"/>
+                        <outlet property="uiView" destination="BTH-5N-iGW" id="p5n-Yp-4gc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cX2-Rh-fgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="579"/>
+            <point key="canvasLocation" x="2277" y="481"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="AmI-fb-jgr">
+        <scene sceneID="zr3-sA-pBh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MjQ-MI-xiH" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LS1-qW-odk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uhM-M5-X3v">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jgc-Gs-ciJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="1uI-OV-wxZ" kind="relationship" relationship="rootViewController" id="ZI8-eq-VcS"/>
+                        <segue destination="1uI-OV-wxZ" kind="relationship" relationship="rootViewController" id="LUf-Qb-5zk"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZzL-Uf-Lob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8K-dL-6cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842" y="579"/>
+            <point key="canvasLocation" x="1465" y="481"/>
         </scene>
     </scenes>
 </document>

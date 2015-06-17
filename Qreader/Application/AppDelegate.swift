@@ -4,11 +4,7 @@
 //
 //  Copyright (c) 2015年 gomi. All rights reserved.
 //
-import RxSwift
 import UIKit
-import Alamofire
-import SwiftyJSON
-import Alamofire_SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
